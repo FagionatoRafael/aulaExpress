@@ -1,0 +1,12 @@
+<h1>Lista de produtos: </h1>
+
+{{#each posts}}
+    <h1>{{dataValues.titulo}}</h1>
+    <p>{{dataValues.conteudo}}</p>
+    <a href="/del/{{dataValues.id}}"><button>deletar</button></a>
+    <a href="/ed/{{dataValues.id}}"><button>update</button></a>
+    <a href="/mos/{{dataValues.id}}"><button>mostrar</button></a>
+    <hr>
+{{/each}}
+
+<button><a href="/cad">Cadastrar</a></button>
